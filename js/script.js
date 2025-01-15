@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Run once on load
+    handleScroll(); 
   });
   
+  if (/Mobi|Android|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+    alert("You're visiting this site on a mobile device! Please visit on a desktop for the best experience.");
+}
+
