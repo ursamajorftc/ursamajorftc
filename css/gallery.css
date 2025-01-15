@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+    color: #f5f5f5;
+}
+
+.gallery img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.modal-content {
+    background-color: #000;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+}

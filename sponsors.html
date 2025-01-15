@@ -7,6 +7,7 @@
     <title>Ursa Major 22774</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sponsor.css">
     <script defer src="./js/script.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html"><img src="./assets/logo/ursalogo.png"  alt="Ursa Major Logo" style="width:128px;height:128px;"></a>
+            <a href="/index.html"><img src="./assets/logo/ursalogo.png" alt="Ursa Major Logo" style="width:128px;height:128px;"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,28 +31,47 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="video-background">
-            <iframe src="https://www.youtube.com/embed/ygILLWF4e_c?autoplay=1&loop=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&fs=0&iv_load_policy=3&playlist=ygILLWF4e_c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+    <section class="sponsors" data-aos="fade-up">
+        <div class="section">
+            <h2>Our Sponsors</h2>
+            <p>We are grateful to have the support of the following organizations:</p>
+            <div class="sponsor-grid">
+                <div class="sponsor">
+                    <img src="./assets/sponsors/genehaas.png" alt="Sponsor 1 Logo">
+                    <p>Gene Haas Foundation</p>
+                </div>
+                <div class="sponsor">
+                    <img src="./assets/sponsors/tesla.png" alt="Sponsor 2 Logo">
+                    <p>Tesla</p>
+                </div>
+                <div class="sponsor">
+                    <img src="./assets/sponsors/sensussocial.png" alt="Sponsor 3 Logo">
+                    <p>Sensus Social</p>
+                </div>
+                <div class="sponsor">
+                    <img src="./assets/sponsors/dolanauto.png" alt="Sponsor 4 Logo">
+                    <p>Dolan Auto Group</p>
+                </div>
+                <div class="sponsor">
+                    <img src="./assets/sponsors/pandaexp.png" alt="Sponsor 5 Logo">
+                    <p>Panda Express Reno</p>
+                </div>
 
-
-        </div>
-        <div class="hero-content">
-            <h2>Welcome to the Official Website of Team URSA Major FTC 22774!</h2>
-            <p>Ursa Major 22774 inspires and empowers future engineers and innovators through robotics.</p>
-            <button>Learn More</button>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Ursa Major 22774. All rights reserved.</p>
         <p>Website designed by Aaron, a member of the team.</p>
-        <br>
         <p>“It’ll work, trust” - Duke, 2025</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS for scroll animations
+    </script>
 
 </body>
 
