@@ -1,0 +1,99 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #000000;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #FFD700;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+
+        header ul li {
+            margin-left: 30px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        header ul li a:hover {
+            color: #ff6600;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 40px 20px;
+            background: #222222;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+        }
+
+        .content h3 {
+            font-size: 2em;
+            margin-top: 30px;
+            color: #FFD700;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #FFD700;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #f5f5f5;
+        }
