@@ -1,3 +1,6 @@
+if (/Mobi|Android|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+  window.location.href = "https://mobile.ursamajorftc.org/";
+}
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.fade-in');
   
@@ -14,7 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll(); 
   });
   
-  if (/Mobi|Android|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
-    alert("You're visiting this site on a mobile device! Please visit on a desktop for the best experience.");
-}
-
