@@ -16,7 +16,9 @@
 <body>
     <header>
         <nav>
-            <a href="./"><img src="./assets/logo/ursalogo.png" alt="Ursa Major Logo" style="width:128px;height:128px;"></a>            <ul>
+            <a href="./"><img src="./assets/logo/ursalogo.png" alt="Ursa Major Logo"
+                    style="width:128px;height:128px;"></a>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="achievements.html">Achievements</a></li>
@@ -25,16 +27,16 @@
                 <li><a href="sponsors.html">Sponsors</a></li>
                 <li><a href="stem-academy.html">STEM Academy</a></li>
                 <li><a href="robot.html">Our Robot</a></li>
-    
+
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container mt-5">
-        
+
         <div class="row gallery">
-            
+
             <div class="col-md-4 mb-4">
                 <img src="./assets/gallery/1.jpg" class="img-fluid" alt="Gallery Image 1">
             </div>
@@ -52,39 +54,40 @@
             </div>
             <div class="col-md-4 mb-4">
                 <img src="./assets/gallery/6.jpg" class="img-fluid" alt="Gallery Image 6">
+            </div>
         </div>
-    </div>
 
-    <!-- Modal for image viewer -->
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="" alt="Selected Image" id="modalImage">
+        <!-- Modal for image viewer -->
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="" alt="Selected Image" id="modalImage">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2025 Ursa Major 22774. All rights reserved.</p>
-        <p>Website designed by Aaron, a member of the team.</p>
-        <p>“It’ll work, trust” - Duke, 2025</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Ursa Major 22774. All rights reserved.</p>
+            <p>Website designed by Aaron, a member of the team.</p>
+            <p>“It’ll work, trust” - Duke, 2025</p>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-      
-        $('#imageModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
-            var imageSrc = button.data('image');
-            var modalImage = $('#modalImage');
-            modalImage.attr('src', imageSrc);
-        });
-    </script>
+        <script>
+
+            $('#imageModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var imageSrc = button.data('image');
+                var modalImage = $('#modalImage');
+                modalImage.attr('src', imageSrc);
+            });
+        </script>
 </body>
 
 </html>
