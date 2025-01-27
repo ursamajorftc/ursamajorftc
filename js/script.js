@@ -16,4 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); 
   });
-  
+  $('#imageModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var imageSrc = button.data('image');
+    var modalImage = $('#modalImage');
+    modalImage.attr('src', imageSrc);
+});
